@@ -1,0 +1,115 @@
+/*
+---------------------------------------------------------------------
+R E S E T ,   I M P O R T ,   M I X I N S  &   V A R I A B L E S
+---------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+body { width: 100%; *zoom: 1; }
+body:before, body:after { content: ""; display: table; }
+body:after { clear: both; }
+
+/*
+---------------------------------------------------------------------
+B A S E
+---------------------------------------------------------------------*/
+body { font-family: sans-serif; color: #333; font-family: ratio; background: #1990c6 url("../../i/bg.png") no-repeat; color: #fff; background-size: cover; -webkit-text-size-adjust:none; }
+
+img, video, iframe { display: block; max-width: 100%; outline: none; }
+
+/*
+---------------------------------------------------------------------
+T Y P O G R A P H Y
+---------------------------------------------------------------------*/
+h1 { color: #fff; }
+
+h2 { text-transform: uppercase; letter-spacing: .1em; }
+
+h2 strong { font-weight: bold; }
+
+p { line-height: 1.4em; margin-bottom: 1em; color: rgba(255, 255, 255, 0.8); }
+
+/*
+---------------------------------------------------------------------
+ A   -   M O B I L E   L A Y O U T
+ Viewport width:		0 - 900px Devices:				iPhone, iPad Portrait
+
+---------------------------------------------------------------------*/
+.wrap { width: 90%; margin: 0 auto; max-width: 1280px; *zoom: 1; position: relative; }
+.wrap:before, .wrap:after { content: ""; display: table; }
+.wrap:after { clear: both; }
+
+h1 { text-transform: uppercase; font-size: 4.5em; margin-bottom: .5em; margin-top: .25em; }
+
+h1 strong { font-weight: 600; font-style: italic; display: block; font-size: 1.2em; }
+
+#redesign-no { border-left: 1px solid rgba(0, 0, 0, 0.1); padding-left: 1em; padding-top: 2em; display: inline-block; padding-bottom: .5em; font-family: ratio-display; color: rgba(255, 255, 255, 0.6); position: absolute; top: 0; right: 0; }
+
+#col1 { margin-bottom: 1em; }
+
+#col1 h2 { color: rgba(0, 0, 0, 0.4); font-size: 14px; }
+
+#col2 { border-top: 8px solid #fff; border-color: rgba(255, 255, 255, 0.4); padding-top: 1em; margin-bottom: 3em; }
+
+#col2 p:first-of-type { font-family: ratio-display; font-size: 1.5em; line-height: 1.2em; }
+
+.logo { text-indent: -99999px; background: transparent url("../../i/logo-333.svg") no-repeat 0 0; display: inline-block; width: 137px; height: 29px; }
+
+#footer { padding: 30px 0; overflow: hidden; border-color: rgba(0, 0, 0, 0.1); background-color: #fff; box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1), 0 10px 0 0 rgba(0, 0, 0, 0.4); margin-bottom: 10px; }
+
+#footer .logo { float: left; }
+
+#footer nav { display: none; }
+
+#footer .wrap div { float: right; margin-left: .5em; margin-top: .5em; }
+
+#footer em { color: #888; font-style: italic; display: none; }
+
+#social { float: left; display: inline-block; }
+
+#social li { float: left; margin-left: .5em; }
+
+#social li a { font-weight: bold; font-size: 20px; color: #ccc; }
+
+#social li a:hover { color: #333; }
+
+#social li a:active { color: #222; }
+
+/*
+---------------------------------------------------------------------
+ B   -   D E S K T O P   L A Y O U T
+ Viewport width:		900px - ∞ Devices:				iPad Landscape, Desktop
+
+---------------------------------------------------------------------*/
+@media screen and (min-width: 900px) { #redesign-no { padding-top: 3em; }
+
+	#col1 h2 { font-size: 16px; text-align: right; }
+
+  h1 { margin-left: 34.375%; font-size: 8em; }
+  #brb { padding-bottom: 2em; }
+  [id^="col"] { display: inline; float: left; width: 31.25%; margin: 0 1.04167%; }
+  #col1 { border-top: 8px solid #fff; border-color: rgba(255, 255, 255, 0.4); padding-top: 1em; margin-bottom: 3em; margin-left: -10000%; padding-left: 10001.04167%; }
+  #footer nav { display: block; }
+  #footer nav ul { *zoom: 1; padding-top: 8px; margin-left: 30px; float: left; }
+  #footer nav ul:before, #footer nav ul:after { content: ""; display: table; }
+  #footer nav ul:after { clear: both; }
+  #footer nav ul li { display: block; float: left; margin-right: .75em; }
+  #footer nav ul li:after { content: "•"; margin-left: .75em; color: #ccc; }
+  #footer nav ul li:last-child:after { content: ""; }
+  #footer nav ul li a { color: #555; text-decoration: none; }
+  #footer div em { float: left; display: inline-block; margin-left: 1em; line-height: 29px; text-transform: uppercase; letter-spacing: .1em; font-style: normal; }
+  #social li { margin-left: 1em; } }
